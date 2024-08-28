@@ -60,9 +60,10 @@ public class Main {
 			int b = 2;
 			int t = b;
 			int cont = 0;
+			String erro = "";
 			while(resultado==0) {
 				
-			
+		System.out.println("\n");
 		System.out.println("-----------------\n");
 		System.out.println("  "+n1+"  |  "+n2+"  |  "+n3+"   ");
 		System.out.println("_____|_____|_____");
@@ -71,8 +72,10 @@ public class Main {
 		System.out.println("  "+n7+"  |  "+n8+"  |  "+n9+"   ");
 		System.out.println("     |     |     ");
 		System.out.println("\n-----------------");
+		System.out.println("\n");
+		System.out.println(erro);
 		System.out.println("\nDigite: '0' para voltar ao menu principal!");
-		System.out.println("\nVez do Jogador "+j+":");
+		System.out.println("Vez do Jogador "+j+":");
 		int vez = sc.nextInt();
 			
 		if(vez==0) {
@@ -81,227 +84,246 @@ public class Main {
 		}
 		if (j == 1) {
 		    switch (vez) {
-		        case 1: 
-		            if (n1.equals("1")) { 
+		        case 1:
+		            if (n1.equals("1")) {
 		                n1 = "X";
 		                t = j;
 		                j = b;
 		                b = t;
 		                cont++;
-		            } else { 
-		                System.out.println("Essa posição já foi marcada, escolha outra posição!");
+		                erro = "";
+		            } else {
+		                erro = "⚠️ Essa posição já foi marcada, escolha outra posição!";
 		                j = 1;
 		            }
 		            break;
-		        case 2: 
-		            if (n2.equals("2")) { 
+		        case 2:
+		            if (n2.equals("2")) {
 		                n2 = "X";
 		                t = j;
 		                j = b;
 		                b = t;
 		                cont++;
-		            } else { 
-		                System.out.println("Essa posição já foi marcada, escolha outra posição!");
+		                erro = "";
+		            } else {
+		                erro = "⚠️ Essa posição já foi marcada, escolha outra posição!";
 		                j = 1;
 		            }
 		            break;
-		        case 3: 
-		            if (n3.equals("3")) { 
+		        case 3:
+		            if (n3.equals("3")) {
 		                n3 = "X";
 		                t = j;
 		                j = b;
 		                b = t;
 		                cont++;
-		            } else { 
-		                System.out.println("Essa posição já foi marcada, escolha outra posição!");
+		                erro = "";
+		            } else {
+		                erro = "⚠️ Essa posição já foi marcada, escolha outra posição!";
 		                j = 1;
 		            }
 		            break;
-		        case 4: 
-		            if (n4.equals("4")) { 
+		        case 4:
+		            if (n4.equals("4")) {
 		                n4 = "X";
 		                t = j;
 		                j = b;
 		                b = t;
 		                cont++;
-		            } else { 
-		                System.out.println("Essa posição já foi marcada, escolha outra posição!");
+		                erro = "";
+		            } else {
+		                erro = "⚠️ Essa posição já foi marcada, escolha outra posição!";
 		                j = 1;
 		            }
 		            break;
-		        case 5: 
-		            if (n5.equals("5")) { 
+		        case 5:
+		            if (n5.equals("5")) {
 		                n5 = "X";
 		                t = j;
 		                j = b;
 		                b = t;
 		                cont++;
-		            } else { 
-		                System.out.println("Essa posição já foi marcada, escolha outra posição!");
+		                erro = "";
+		            } else {
+		                erro = "⚠️ Essa posição já foi marcada, escolha outra posição!";
 		                j = 1;
 		            }
 		            break;
-		        case 6: 
-		            if (n6.equals("6")) { 
+		        case 6:
+		            if (n6.equals("6")) {
 		                n6 = "X";
 		                t = j;
 		                j = b;
 		                b = t;
 		                cont++;
-		            } else { 
-		                System.out.println("Essa posição já foi marcada, escolha outra posição!");
+		                erro = "";
+		            } else {
+		                erro = "⚠️ Essa posição já foi marcada, escolha outra posição!";
 		                j = 1;
 		            }
 		            break;
-		        case 7: 
-		            if (n7.equals("7")) { 
+		        case 7:
+		            if (n7.equals("7")) {
 		                n7 = "X";
 		                t = j;
 		                j = b;
 		                b = t;
 		                cont++;
-		            } else { 
-		                System.out.println("Essa posição já foi marcada, escolha outra posição!");
+		                erro = "";
+		            } else {
+		                erro = "⚠️ Essa posição já foi marcada, escolha outra posição!";
 		                j = 1;
 		            }
 		            break;
-		        case 8: 
-		            if (n8.equals("8")) { 
+		        case 8:
+		            if (n8.equals("8")) {
 		                n8 = "X";
 		                t = j;
 		                j = b;
 		                b = t;
 		                cont++;
-		            } else { 
-		                System.out.println("Essa posição já foi marcada, escolha outra posição!");
+		                erro = "";
+		            } else {
+		                erro = "⚠️ Essa posição já foi marcada, escolha outra posição!";
 		                j = 1;
 		            }
 		            break;
-		        case 9: 
-		            if (n9.equals("9")) { 
+		        case 9:
+		            if (n9.equals("9")) {
 		                n9 = "X";
 		                t = j;
 		                j = b;
 		                b = t;
 		                cont++;
-		            } else { 
-		                System.out.println("Essa posição já foi marcada, escolha outra posição!");
+		                erro = "";
+		            } else {
+		                erro = "⚠️ Essa posição já foi marcada, escolha outra posição!";
 		                j = 1;
 		            }
 		            break;
 		    }
 		} else if (j == 2) {
 		    switch (vez) {
-		        case 1: 
-		            if (n1.equals("1")) { 
+		        case 1:
+		            if (n1.equals("1")) {
 		                n1 = "O";
 		                t = j;
 		                j = b;
 		                b = t;
 		                cont++;
-		            } else { 
-		                System.out.println("Essa posição já foi marcada, escolha outra posição!");
+		                erro = "";
+		            } else {
+		                erro = "⚠️ Essa posição já foi marcada, escolha outra posição!";
 		                j = 2;
 		            }
 		            break;
-		        case 2: 
-		            if (n2.equals("2")) { 
+		        case 2:
+		            if (n2.equals("2")) {
 		                n2 = "O";
 		                t = j;
 		                j = b;
 		                b = t;
 		                cont++;
-		            } else { 
-		                System.out.println("Essa posição já foi marcada, escolha outra posição!");
+		                erro = "";
+		            } else {
+		                erro = "⚠️ Essa posição já foi marcada, escolha outra posição!";
 		                j = 2;
 		            }
 		            break;
-		        case 3: 
-		            if (n3.equals("3")) { 
+		        case 3:
+		            if (n3.equals("3")) {
 		                n3 = "O";
 		                t = j;
 		                j = b;
 		                b = t;
 		                cont++;
-		            } else { 
-		                System.out.println("Essa posição já foi marcada, escolha outra posição!");
+		                erro = "";
+		            } else {
+		                erro = "⚠️ Essa posição já foi marcada, escolha outra posição!";
 		                j = 2;
 		            }
 		            break;
-		        case 4: 
-		            if (n4.equals("4")) { 
+		        case 4:
+		            if (n4.equals("4")) {
 		                n4 = "O";
 		                t = j;
 		                j = b;
 		                b = t;
 		                cont++;
-		            } else { 
-		                System.out.println("Essa posição já foi marcada, escolha outra posição!");
+		                erro = "";
+		            } else {
+		                erro = "⚠️ Essa posição já foi marcada, escolha outra posição!";
 		                j = 2;
 		            }
 		            break;
-		        case 5: 
-		            if (n5.equals("5")) { 
+		        case 5:
+		            if (n5.equals("5")) {
 		                n5 = "O";
 		                t = j;
 		                j = b;
 		                b = t;
 		                cont++;
-		            } else { 
-		                System.out.println("Essa posição já foi marcada, escolha outra posição!");
+		                erro = "";
+		            } else {
+		                erro = "⚠️ Essa posição já foi marcada, escolha outra posição!";
 		                j = 2;
 		            }
 		            break;
-		        case 6: 
-		            if (n6.equals("6")) { 
+		        case 6:
+		            if (n6.equals("6")) {
 		                n6 = "O";
 		                t = j;
 		                j = b;
 		                b = t;
 		                cont++;
-		            } else { 
-		                System.out.println("Essa posição já foi marcada, escolha outra posição!");
+		                erro = "";
+		            } else {
+		                erro = "⚠️ Essa posição já foi marcada, escolha outra posição!";
 		                j = 2;
 		            }
 		            break;
-		        case 7: 
-		            if (n7.equals("7")) { 
+		        case 7:
+		            if (n7.equals("7")) {
 		                n7 = "O";
 		                t = j;
 		                j = b;
 		                b = t;
 		                cont++;
-		            } else { 
-		                System.out.println("Essa posição já foi marcada, escolha outra posição!");
+		                erro = "";
+		            } else {
+		                erro = "⚠️ Essa posição já foi marcada, escolha outra posição!";
 		                j = 2;
 		            }
 		            break;
-		        case 8: 
-		            if (n8.equals("8")) { 
+		        case 8:
+		            if (n8.equals("8")) {
 		                n8 = "O";
 		                t = j;
 		                j = b;
 		                b = t;
 		                cont++;
-		            } else { 
-		                System.out.println("Essa posição já foi marcada, escolha outra posição!");
+		                erro = "";
+		            } else {
+		                erro = "⚠️ Essa posição já foi marcada, escolha outra posição!";
 		                j = 2;
 		            }
 		            break;
-		        case 9: 
-		            if (n9.equals("9")) { 
+		        case 9:
+		            if (n9.equals("9")) {
 		                n9 = "O";
 		                t = j;
 		                j = b;
 		                b = t;
 		                cont++;
-		            } else { 
-		                System.out.println("Essa posição já foi marcada, escolha outra posição!");
+		                erro = "";
+		            } else {
+		                erro = "⚠️ Essa posição já foi marcada, escolha outra posição!";
 		                j = 2;
 		            }
 		            break;
 		    }
 		}
+
 
 	
 		if (n1.equals(n2) && n2.equals(n3)) {
